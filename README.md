@@ -53,10 +53,10 @@ git clone : clonar un repositorio dentro de un nuevo repositorio.
 ## Inicio con GIT  
 
 ##### Crear un repositorio local  
-%system git init
+$ git init
 
 ##### Revisar el contenido del repositorio  
-%system git status
+$ git status
 
 A continuación se ilustraran ejemplos sobre la funcionalidades de Git, la manera como trabaja dentro de nuestra computadora y al momento de cargarlo a un repositorio GitHub, 
 como se aplican sus códigos y como esta compuesto Git:  
@@ -233,7 +233,7 @@ Es una alternativa para el uso del Rebase. En lugar de mover una rama, crea una 
 
 Ejercicio:
 
-%system git merge --continue  
+$ git merge --continue  
 [master 6e937bd] Merge branch 'dog'  
 
 ### Remote:
