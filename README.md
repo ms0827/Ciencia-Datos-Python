@@ -84,10 +84,9 @@ Git genera información sobre el cambio, detallando el día, hora y usuario, con
 ##### Ejercicio 1:  
 
 %system git commit
-%system git commit
 [master (root-commit) 84148ca] Add hello.txt
- 1 file changed, 1 insertion(+)
- create mode 100644 hello.txt  
+1 file changed, 1 insertion(+)
+create mode 100644 hello.txt  
  
 ### Hash:
 Es importante conocer que Git genera un código de 40 caracteres, llamado "Hash".
@@ -95,7 +94,7 @@ Hash es un Código de referencia para blob, tree, commit por cada cambio que se 
 
 Ejemplos:
 
-% commit 84148ca794260be0113dc26a124e6711c3930a6
+% commit 84148ca794260be0113dc26a124e6711c3930a6  
 % tree 68aba62e560c0ebc3396e8ae9335232cd93a3f60  
 
 ### Tree:
