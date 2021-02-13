@@ -53,10 +53,10 @@ git clone : clonar un repositorio dentro de un nuevo repositorio.
 ## Inicio con GIT  
 
 ##### Crear un repositorio local  
-$ git init
+%system git init
 
 ##### Revisar el contenido del repositorio  
-$ git status
+%system git status
 
 A continuación se ilustraran ejemplos sobre la funcionalidades de Git, la manera como trabaja dentro de nuestra computadora y al momento de cargarlo a un repositorio GitHub, 
 como se aplican sus códigos y como esta compuesto Git:  
@@ -111,16 +111,17 @@ El programador puede trabajar en cada rama independiente de la versión. HEAD ma
 Ejercicio 1:
 
 ##### Crear una rama
-%system git checkout master
+$ git checkout master
 Previous HEAD position was 84148ca Add hello.txt
 Switched to branch 'master'
-%system git branch  
+
+$ git branch  
         cat  
         dog  
       * master  
  
 ##### Visualizacion de rama
-%system git log --all --graph --decorate  
+$ git log --all --graph --decorate  
 * commit 219a62e81168a17ca3eb5f90dfd5b4ef6807de44 (master)  
 | Author: Margerys Salgado <salgado.margerys@gmail.com>  
 | Date:   Sun Feb 7 16:45:28 2021 -0600  
@@ -134,7 +135,7 @@ Switched to branch 'master'
       Add hello.txt  
 
 ##### Visualizacion de rama
-%system git log --all --graph --decorate --oneline  
+$ git log --all --graph --decorate --oneline  
 * 62e3fc4 (HEAD -> master) X  
 *   6e937bd (origin/master) Merge branch 'dog'  
 |\  
@@ -151,13 +152,14 @@ Para esta actividad es necesario utilizar $git checkout. En Git el programador p
 
 ##### Ejercicio 1:
 
-%system git checkout -b <84147ca>
-%system git checkout 84148ca  
+$ git checkout -b <84147ca>
+
+$ git checkout 84148ca  
 Note: switching to '84148ca'.  
 
 ##### Ejercicio 2:
 
-%system git checkout master  
+$git checkout master  
 Previous HEAD position was 84148ca Add hello.txt  
 Switched to branch 'master'   
 
@@ -167,7 +169,7 @@ programadores, conociendo la información al detalle y los cambios exactos que r
 
 ##### Ejercicio 1: a través del archivo
 
-%system git diff hello.txt  
+$ git diff hello.txt  
 diff --git a/hello.txt b/hello.txt  
 index fdff486..d7301eb 100644  
 --- a/hello.txt  
@@ -180,7 +182,7 @@ hello world
 
 ##### Ejercicio 2: utilizando su Hash
 
-%system git diff 84148ca hello.txt  
+$ git diff 84148ca hello.txt  
 diff --git a/hello.txt b/hello.txt  
 index 3b18e51..d7301eb 100644  
 --- a/hello.txt  
@@ -195,7 +197,7 @@ El sistema a través del Git Bash, permite trabajar con funciones para cualquier
 
 ##### Ejercicio 1: python animal.py
 
-%system import sys
+$ import sys
 ​
 def default():
     print('Hello')
@@ -208,7 +210,7 @@ if __name__ == '__main__':
 
 ##### Ejercicio 2:
 
-%system import sys
+$ import sys
 ​
 def cat():
     print('Meow!')
@@ -248,7 +250,7 @@ Es necesario para tener acceso a GitHub (https://github.com/) contar con un usua
 Despliega todos los commit realizados.
 
 ##### Ejemplo No.1
-%system git log
+$ git log
 commit 219a62e81168a17ca3eb5f90dfd5b4ef6807de44 (HEAD -> master)
 Author: Margerys Salgado <salgado.margerys@gmail.com>
 Date:   Sun Feb 7 16:45:28 2021 -0600
@@ -264,7 +266,7 @@ log --all --graph --decorate: despliega con más detalles los commit realizados.
 
 
 ##### Ejemplo No.2
-%system git log --all --graph --decorate --oneline  
+$ git log --all --graph --decorate --oneline  
 * 62e3fc4 (HEAD -> master) X  
 *   6e937bd (origin/master) Merge branch 'dog'  
 |\  
@@ -281,7 +283,7 @@ Descarga los cambios. $git pull, trae los archivos nuevos creados en GitHub.
 ### Push:
 Se utiliza en el proceso de cargar los cambios al repositorio remoto.
 
-%system git push origin master:master  
+$ git push origin master:master  
 Enumerating objects: 18, done.  
 Counting objects: 100% (18/18), done.  
 Delta compression using up to 12 threads  
@@ -296,7 +298,8 @@ To https://github.com/ms0827/Ciencia-Datos-Python.git
 ### Clone:
 Copia un repositorio.
 
-%system git clone <URL o PATH del repositorio remoto>
+$ git clone <URL o PATH del repositorio remoto>
+$ git clone <https://github.com/ms0827/Ciencia-Datos-Python.git>
 
 ### Fork:
 Clona el repositorio en su cuenta de GitHub, en lugar de la computadora.
@@ -307,6 +310,8 @@ Permite trabajar en colaboración con otras personas de todo el mundo, planifica
 
 No se debe confundir los conceptos de Git y GitHub, el primero es un software de códigos abiertos, mientras que, GitHub es una plataforma de códigos abiertos, 
 donde pueden trabajar desarrolladores de manera simultánea en un mismo proyecto de manera gratuita.
+
+https://github.com/ms0827/Ciencia-Datos-Python
 
 ### Conclusiones  
 
