@@ -40,14 +40,14 @@ Que para este ejercicio se procedió a crear una carpeta llamada "Trabajo-Git".
 ##### Algunos comandos basicos en Git, que necesitas conocer:  
 -- git init : iniciar un repositorio en Git; comenzar a trabajar en el working directory; vaciar un repositorio o reiniciar uno existente.  
 -- git help: obtener ayuda con los códigos Git.  
-git status : muestra el estado de los archivos.  
-git add : agrega un archivo del working directory al staging area.  
-git commit : graba los cambios en el repositorio o confirmar cambios. Es importante conocer que cada commit tiene su propio Hash.  
-git checkout : cargar un commit.  
-git checkin : hacer un commit.  
-git push : actualiza cambios remotas.  
-git pull : obtener o integrar cambios de otros repositorios.  
-git clone : clonar un repositorio dentro de un nuevo repositorio.  
+-- git status : muestra el estado de los archivos.  
+-- git add : agrega un archivo del working directory al staging area.  
+-- git commit : graba los cambios en el repositorio o confirmar cambios. Es importante conocer que cada commit tiene su propio Hash.  
+-- git checkout : cargar un commit.  
+-- git checkin : hacer un commit.  
+-- git push : actualiza cambios remotas.  
+-- git pull : obtener o integrar cambios de otros repositorios.  
+-- git clone : clonar un repositorio dentro de un nuevo repositorio.  
 
 
 ## Inicio con GIT  
