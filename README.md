@@ -298,8 +298,8 @@ To https://github.com/ms0827/Ciencia-Datos-Python.git
 ### Clone:
 Copia un repositorio.
 
-$ git clone <URL o PATH del repositorio remoto>
-$ git clone <https://github.com/ms0827/Ciencia-Datos-Python.git>
+$ git clone <"URL o PATH del repositorio remoto">  
+$ git clone <"https://github.com/ms0827/Ciencia-Datos-Python.git">
 
 ### Fork:
 Clona el repositorio en su cuenta de GitHub, en lugar de la computadora.
