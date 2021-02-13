@@ -65,7 +65,7 @@ como se aplican sus códigos y como esta compuesto Git:
 En Git un archivo Blob son unidades de almacenamiento básicas, almacena el contenido de los archivos.
 Para nuestro ejercicio se crearon archivos a través de Git utilizando el comando $ echo "nombre del archivo":  
 
-Ejemplos:  
+##### Ejemplos:  
 
 %echo "hello world" > hello.txt  
 %echo "another line" >> hello.txt  
@@ -92,7 +92,7 @@ create mode 100644 hello.txt
 Es importante conocer que Git genera un código de 40 caracteres, llamado "Hash".
 Hash es un Código de referencia para blob, tree, commit por cada cambio que se realice en los entornos.  
 
-Ejemplos:
+##### Ejemplos:
 
 % commit 84148ca794260be0113dc26a124e6711c3930a6  
 % tree 68aba62e560c0ebc3396e8ae9335232cd93a3f60  
@@ -100,7 +100,7 @@ Ejemplos:
 ### Tree:
 Representa directorios para blobs o más árboles. Puede contener otros directorios.  
 
-Ejemplo:
+##### Ejemplo:
 
 $ git cat-file -p 84148ca794260be0113dc26a124e6711c3930a60  
 
@@ -108,7 +108,7 @@ $ git cat-file -p 84148ca794260be0113dc26a124e6711c3930a60
 Cada commit puede crear diferentes ramas, pero esta rama solamente conoce a su precedente. Las branch creadas por cada commit Git las llama Master. 
 El programador puede trabajar en cada rama independiente de la versión. HEAD marca donde estamos trabajando.  
 
-Ejercicio 1:
+##### Ejercicio 1:
 
 ##### Crear una rama
 $ git checkout master
@@ -233,7 +233,7 @@ Este código mueve todos los commit de un punto a otro. Cada commit que no sea e
 ### Merge:
 Es una alternativa para el uso del Rebase. En lugar de mover una rama, crea una función que conecta ambas ramas.
 
-Ejercicio:
+##### Ejercicio:
 
 $ git merge --continue  
 [master 6e937bd] Merge branch 'dog'  
@@ -315,15 +315,15 @@ https://github.com/ms0827/Ciencia-Datos-Python
 
 ### Conclusiones  
 
-Siendo Git un VCS, resulta muy útil para los programadores, ya que proporciona un espacio donde se pueden almacenar códigos de un proyecto particular, 
+* Siendo Git un VCS, resulta muy útil para los programadores, ya que proporciona un espacio donde se pueden almacenar códigos de un proyecto particular, 
 almacenando cada avance del mismo, sin lograr perder datos.
 
-Git a través de GitHub proporciona un repositorio central, para trabajos en conjunto con varios desarrolladores.
+* Git a través de GitHub proporciona un repositorio central, para trabajos en conjunto con varios desarrolladores.
 
-Git proporciona herramientas útiles para dar seguimiento a cambios o nuevas actualizaciones, las cuales dependerá del objetivo del proyecto para aceptar los mismo.
+* Git proporciona herramientas útiles para dar seguimiento a cambios o nuevas actualizaciones, las cuales dependerá del objetivo del proyecto para aceptar los mismo.
 
-Git contiene toda la historia de un proyecto en un mismo lugar y a través de su código Hash se puede tener un registro de todos los commit realizados.
+* Git contiene toda la historia de un proyecto en un mismo lugar y a través de su código Hash se puede tener un registro de todos los commit realizados.
 
-Una de las cualidades más importantes de Git y GitHub son que las herramientas son softwares libres, fáciles de instalar y entender por usuarios que comienzan a incursionar 
+* Una de las cualidades más importantes de Git y GitHub son que las herramientas son softwares libres, fáciles de instalar y entender por usuarios que comienzan a incursionar 
 en mundo de la programación.
 
