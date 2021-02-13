@@ -30,9 +30,9 @@ Actualmente en el sitio Web se encuentra la versión más reciente de Git 2.30.0
 Los siguientes códigos nos ayudan a revisar los archivos que tenemos y redireccionar el lugar donde queremos guardar nuestro nuevo proyecto. 
 Que para este ejercicio se procedió a crear una carpeta llamada "Trabajo-Git".
 
-%pwd
-%cd Desktop
-%cd Trabajo-Git
+%pwd  
+%cd Desktop  
+%cd Trabajo-Git  
 %ls
 
 Algunos comandos basicos en Git, que necesitas conocer:
@@ -277,7 +277,8 @@ Permite trabajar en colaboración con otras personas de todo el mundo, planifica
 No se debe confundir los conceptos de Git y GitHub, el primero es un software de códigos abiertos, mientras que, GitHub es una plataforma de códigos abiertos, 
 donde pueden trabajar desarrolladores de manera simultánea en un mismo proyecto de manera gratuita.
 
-Conclusiones
+Conclusiones  
+
 Siendo Git un VCS, resulta muy útil para los programadores, ya que proporciona un espacio donde se pueden almacenar códigos de un proyecto particular, 
 almacenando cada avance del mismo, sin lograr perder datos.
 
