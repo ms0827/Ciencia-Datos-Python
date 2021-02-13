@@ -28,7 +28,7 @@ Git es un sistema muy fácil de instalar, se puede obtener para los sistemas Lin
 Actualmente en el sitio Web se encuentra la versión más reciente de Git 2.30.0.
 
 ##### Revisión de Directorio:
-A través de Pytho se puede trabajar en conjunto los proyecto Git. 
+A través de Python se puede trabajar en conjunto los proyecto Git. 
 Los siguientes códigos nos ayudan a revisar los archivos que tenemos y redireccionar el lugar donde queremos guardar nuestro nuevo proyecto. 
 Que para este ejercicio se procedió a crear una carpeta llamada "Trabajo-Git".
 
@@ -70,7 +70,7 @@ Para nuestro ejercicio se crearon archivos a través de Git utilizando el comand
 %echo "hello world" > hello.txt  
 %echo "another line" >> hello.txt  
 
-##### realizar cambios en el repositorio  
+##### Realizar cambios en el repositorio  
 Para esta tarea deberás utilizar el código $git add  
 
 %system git add hello.txt
