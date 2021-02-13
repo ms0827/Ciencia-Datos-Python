@@ -20,6 +20,7 @@ a través de un repositorio, donde programadores podrán trabajar en el mismo pr
 Git nace en 2005, como un proyecto fácil de usar, diseño sencillo, eficiente con grandes proyectos y rápido.
 
 Git proporciona líneas de códigos de registro donde se pueden observar las distintas versiones del proyecto, las modificaciones realizadas, quien las realizo, que día y hora se realizaron. 
+
 Asimismo, a través de las bondades que presenta este sistema, el programador podrá aceptar los cambios realizados o continuar con versiones anteriores.
 
 ##### Descarga de Git:
@@ -60,7 +61,8 @@ git clone : clonar un repositorio dentro de un nuevo repositorio.
 A continuación se ilustraran ejemplos sobre la funcionalidades de Git, la manera como trabaja dentro de nuestra computadora y al momento de cargarlo a un repositorio GitHub, 
 como se aplican sus códigos y como esta compuesto Git:  
 
-Blob: en Git un archivo Blob son unidades de almacenamiento básicas, almacena el contenido de los archivos.
+### Blob:
+En Git un archivo Blob son unidades de almacenamiento básicas, almacena el contenido de los archivos.
 Para nuestro ejercicio se crearon archivos a través de Git utilizando el comando $ echo "nombre del archivo":  
 
 Ejemplos:  
@@ -73,12 +75,13 @@ Para esta tarea deberás utilizar el código $git add
 
 %system git add hello.txt
 
-Commit: cuando realizas los cambios que deseas, $git commit confirma los cambios y los guarda en el repositorio local.
+### Commit: 
+Cuando realizas los cambios que deseas, $git commit confirma los cambios y los guarda en el repositorio local.
 Por cada cambio que se realice, Git guarda una snapshots; asimismo, crea un árbol con dos blob.  
 
 Git genera información sobre el cambio, detallando el día, hora y usuario, con su propio Hash. Además, en el repositorio de Git se encontrarán todas las versiones.
 
-Ejercicio 1:  
+##### Ejercicio 1:  
 
 %system git commit
 %system git commit
@@ -86,7 +89,8 @@ Ejercicio 1:
  1 file changed, 1 insertion(+)
  create mode 100644 hello.txt  
  
-Hash: es importante conocer que Git genera un código de 40 caracteres, llamado "Hash".
+### Hash:
+Es importante conocer que Git genera un código de 40 caracteres, llamado "Hash".
 Hash es un Código de referencia para blob, tree, commit por cada cambio que se realice en los entornos.  
 
 Ejemplos:
@@ -94,13 +98,15 @@ Ejemplos:
 % commit 84148ca794260be0113dc26a124e6711c3930a6
 % tree 68aba62e560c0ebc3396e8ae9335232cd93a3f60  
 
-Tree: representa directorios para blobs o más árboles. Puede contener otros directorios.  
+### Tree:
+Representa directorios para blobs o más árboles. Puede contener otros directorios.  
 
 Ejemplo:
 
 %system git cat-file -p 84148ca794260be0113dc26a124e6711c3930a60  
 
-Branch (rama): cada commit puede crear diferentes ramas, pero esta rama solamente conoce a su precedente. Las branch creadas por cada commit Git las llama Master. 
+### Branch (rama):
+Cada commit puede crear diferentes ramas, pero esta rama solamente conoce a su precedente. Las branch creadas por cada commit Git las llama Master. 
 El programador puede trabajar en cada rama independiente de la versión. HEAD marca donde estamos trabajando.  
 
 Ejercicio 1:
@@ -141,21 +147,23 @@ Switched to branch 'master'
 * 84148ca Add hello.txt  
 ​
 
-Cambiar de branch: para esta actividad es necesario utilizar $git checkout. En Git el programador puede elegir la rama en que desea trabajar y la versión que desea.  
+### Cambiar de branch:
+Para esta actividad es necesario utilizar $git checkout. En Git el programador puede elegir la rama en que desea trabajar y la versión que desea.  
 
-Ejercicio 1:
+##### Ejercicio 1:
 
 %system git checkout -b <84147ca>
 %system git checkout 84148ca  
 Note: switching to '84148ca'.  
 
-Ejercicio 2:
+##### Ejercicio 2:
 
 %system git checkout master  
 Previous HEAD position was 84148ca Add hello.txt  
 Switched to branch 'master'   
 
-Revisión de cambios: Git siendo un sistema bastante amigable y útil para los programadores, permite poder revisar dentro del directorio los cambios realizados por los distintos
+### Revisión de cambios:
+Git siendo un sistema bastante amigable y útil para los programadores, permite poder revisar dentro del directorio los cambios realizados por los distintos
 programadores, conociendo la información al detalle y los cambios exactos que realizo, haciendo uso $ git diff "nombre del archivo o Hash".
 
 ##### Ejercicio 1: a través del archivo
@@ -183,7 +191,8 @@ hello world
 +anotherl line  
 +comentario  
 
-Cargar funciones en Git: el sistema a través del Git Bash, permite trabajar con funciones para cualquier programa que queramos, solamente se deberá agregar las extensiones correspondientes al nombre del archivo, para que el sistema reconozca el programa.
+### Cargar funciones en Git:
+El sistema a través del Git Bash, permite trabajar con funciones para cualquier programa que queramos, solamente se deberá agregar las extensiones correspondientes al nombre del archivo, para que el sistema reconozca el programa.
 
 ##### Ejercicio 1: python animal.py
 
@@ -217,23 +226,27 @@ def main():
 if __name__ == '__main__':
     main()
 
-Rebase (Move): este código mueve todos los commit de un punto a otro. Cada commit que no sea el primero siempre dependerá del commit anterior, llamando a este $git commit base.
+### Rebase (Move):
+Este código mueve todos los commit de un punto a otro. Cada commit que no sea el primero siempre dependerá del commit anterior, llamando a este $git commit base.
 
-Merge: es una alternativa para el uso del Rebase. En lugar de mover una rama, crea una función que conecta ambas ramas.
+### Merge:
+Es una alternativa para el uso del Rebase. En lugar de mover una rama, crea una función que conecta ambas ramas.
 
 Ejercicio:
 
 %system git merge --continue  
 [master 6e937bd] Merge branch 'dog'  
 
-Remote: este código ayuda a el programador guardar su proyecto en un repositorio central.
+### Remote:
+Este código ayuda a el programador guardar su proyecto en un repositorio central.
 
 Existes diferentes repositorios de códigos en las plataformas Web (repositorio central), donde los desarrolladores pueden mantener los códigos de sus proyectos. 
 Dentro de estos Open Source está la herramienta de GitHub, que provee accesos a herramientas para desarrolladores.
 
 Es necesario para tener acceso a GitHub (https://github.com/) contar con un usuario, que generar un espacio de trabajo donde otros programadores podrán ver los proyectos que realizas.
 
-log: despliega todos los commit realizados.
+### log:
+Despliega todos los commit realizados.
 
 ##### Ejemplo No.1
 %system git log
@@ -263,9 +276,11 @@ log --all --graph --decorate: despliega con más detalles los commit realizados.
 * 219a62e X  
 * 84148ca Add hello.txt 
 
-Pull: descarga los cambios. $git pull, trae los archivos nuevos creados en GitHub.
+### Pull:
+Descarga los cambios. $git pull, trae los archivos nuevos creados en GitHub.
 
-Push: se utiliza en el proceso de cargar los cambios al repositorio remoto.
+### Push:
+Se utiliza en el proceso de cargar los cambios al repositorio remoto.
 
 %system git push origin master:master  
 Enumerating objects: 18, done.  
@@ -279,11 +294,13 @@ To https://github.com/ms0827/Ciencia-Datos-Python.git
 * [new branch]      master -> master  
 ​
 
-Clone: copia un repositorio.
+### Clone:
+Copia un repositorio.
 
 %system git clone <URL o PATH del repositorio remoto>
 
-Fork: clona el repositorio en su cuenta de GitHub, en lugar de la computadora.
+### Fork:
+Clona el repositorio en su cuenta de GitHub, en lugar de la computadora.
 
 ### GitHub
 Es una plataforma Web que se utiliza como repositorios centrales para desarrolladores de proyectos utilizando el VCS de manera gratuita. 
