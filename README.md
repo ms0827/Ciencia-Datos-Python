@@ -102,7 +102,7 @@ Representa directorios para blobs o más árboles. Puede contener otros director
 
 Ejemplo:
 
-%system git cat-file -p 84148ca794260be0113dc26a124e6711c3930a60  
+$ git cat-file -p 84148ca794260be0113dc26a124e6711c3930a60  
 
 ### Branch (rama):
 Cada commit puede crear diferentes ramas, pero esta rama solamente conoce a su precedente. Las branch creadas por cada commit Git las llama Master. 
@@ -159,7 +159,7 @@ Note: switching to '84148ca'.
 
 ##### Ejercicio 2:
 
-$git checkout master  
+$ git checkout master  
 Previous HEAD position was 84148ca Add hello.txt  
 Switched to branch 'master'   
 
@@ -197,7 +197,7 @@ El sistema a través del Git Bash, permite trabajar con funciones para cualquier
 
 ##### Ejercicio 1: python animal.py
 
-$ import sys
+import sys
 ​
 def default():
     print('Hello')
@@ -210,7 +210,7 @@ if __name__ == '__main__':
 
 ##### Ejercicio 2:
 
-$ import sys
+import sys
 ​
 def cat():
     print('Meow!')
